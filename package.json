@@ -1,1 +1,7 @@
-{ "name": "taggme-backend", "scripts": { "start": "node index.js" } }
+{
+  "name": "taggme-frontend",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
