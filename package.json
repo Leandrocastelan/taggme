@@ -1,0 +1,1 @@
+{ "name": "taggme-backend", "scripts": { "start": "node index.js" } }
