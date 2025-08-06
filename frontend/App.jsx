@@ -1,13 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "./pages/Dashboard.jsx";
 import Feed from "./pages/Feed.jsx";
-import Perfil from "./pages/Perfil.jsx";
-import Comunidades from "./pages/Comunidades.jsx";
-import Eventos from "./pages/Eventos.jsx";
-import Oportunidades from "./pages/Oportunidades.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import Topbar from "./components/Topbar.jsx";
+
+// (você pode adicionar outras páginas aqui depois, como Perfil, Comunidades etc.)
 
 export default function App() {
   return (
@@ -18,13 +15,8 @@ export default function App() {
           <Topbar />
           <main className="p-6">
             <Routes>
-              <Route path="/" element={<Dashboard />} />
               <Route path="/feed" element={<Feed />} />
-              <Route path="/perfil" element={<Perfil />} />
-              <Route path="/comunidades" element={<Comunidades />} />
-              <Route path="/eventos" element={<Eventos />} />
-              <Route path="/oportunidades" element={<Oportunidades />} />
-              <Route path="*" element={<Navigate to="/" />} />
+              <Route path="*" element={<Navigate to="/feed" />} />
             </Routes>
           </main>
         </div>
