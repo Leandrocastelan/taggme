@@ -28,7 +28,6 @@ export default function Feed() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    // Simulando chamada à API
     setTimeout(() => {
       setPosts(mockPosts);
     }, 800);
